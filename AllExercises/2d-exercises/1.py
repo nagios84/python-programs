@@ -1,0 +1,36 @@
+
+#
+# Prints triangular stars for n lines
+#    in an ascending manner
+#
+def ascending_stars(n):
+    i = 0
+    while(i<n):
+        j = 0
+        while(j < i):
+            print '*',
+            j = j+1
+        print ""
+        i = i+1
+
+n=int(raw_input("Enter the number : "))
+
+ascending_stars(n)
+#
+#    Examples
+#
+#    1) Enter the number : 4
+#
+#    *
+#    * *
+#    * * *
+#    * * * *
+#
+#    1) Enter the number : 5
+#
+#    *
+#    * *
+#    * * *
+#    * * * *
+#    * * * * *
+#

@@ -1,0 +1,9 @@
+
+rm 2c-exercises.pdf
+gs -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=2a-exercises.pdf -dBATCH *.pdf
+
+mv 2c-exercises.pdf 2
+mkdir pdf
+mv *.pdf pdf
+mv 2 2a-exercises.pdf
+

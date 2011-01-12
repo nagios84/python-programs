@@ -1,0 +1,8 @@
+Chapter 4:
+
+
+3.Try using int() to create an integer from a string.Make sure the result is really an integer
+
+
+>>> int("123")
+123

@@ -1,0 +1,51 @@
+#
+#	Trace the output. (nested function calls)
+#	
+#
+
+def starts_with(str,c):		
+	if(str[0] == c):	
+		return True			
+	return False			
+				
+def second_letter(str,c):		
+	if(str[1]=='b'):		
+		return True			
+	return False			
+			
+def starts_with_ab(str):			
+	if(not(starts_with(str,'a'))):			
+		return False				
+	if(not(second_letter(str,'b'))):		
+		return False				
+	return True					
+	
+	
+str1 = raw_input("Enter a string of a's and b's : ")
+if(starts_with_ab(str1)):				
+	print str1," starts with ab"		
+
+#
+#     Trace the output.
+#	
+#
+#	The format of the trace must be as follows (upto 20 steps is sufficient) :
+# 	       Give some sample values for n and then trace the output,
+#+
+#       Trace of the computer's internal steps :
+#
+# 	Step no.	Prog. Line      Memory Updates/Condition Checks  
+#       1       24              Enter a string of a's abd b's :ab
+#       2       25              Goes to main statement (function call)--(starts_with_ab(ab))
+#       3       16              Checks this function and in the arguments takes ab
+#       4       17              Cheks the condition,another function call if(not(starts_with(str,'a'))) and in the arguments takes ab and a
+#       5       06              Checks this function - def starts_with(str,c), ie def starts_with(ab,a)
+#       6       07              Checks if str[0] = a
+#       7       08              returns True
+#       8       17              if not of True is false
+#       9       19              checks if(not(second_letter(str,'b'))), 
+#       10      11              checks def second_letter(str,c) - def starts_with(str,c) ie def second_letter(ab,b)
+#       11      12              checks this condition if(str[1]=='b')-->true
+#       12      19              if not of True is false
+
+

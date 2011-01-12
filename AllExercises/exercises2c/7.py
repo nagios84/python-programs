@@ -1,0 +1,63 @@
+
+# Given a list, find if the list contains a given value
+
+# Hint : Modify the functions defined in this set
+
+# find(l,val) takes in a list of integers
+#     and returns the first index of val in l if it exists 
+#                 and returns -1 otherwise
+def find(l,val):
+    n = len(l)
+    i = 0
+    while(i < n):
+        if l[i] == x:
+            return i
+        i = i+1
+    return -1
+
+
+
+l=raw_input("enter a list")
+list=eval(l)
+x = raw_input("enter the value to search for")
+i = find(l,x)
+
+if(i==-1):
+    print val," is not present in the list ",list
+else:
+    print list[i]," is present in the list ",list," at position ",i
+
+#    Example sets
+#
+#    1) list = [10,20,5,10,25,5,24]
+#       x = 5
+#       Observable_Output : 5 is present in the list [10,20,5,10,25,5,24] at position 2
+#
+
+#    2) list = [5,10,25,24,29,30]
+#       x = 30
+#       Observable_Output : 30 is present in the list [10,20,5,10,25,5,24] at position 5
+#
+
+#    3) list = [5,10,25,24,12,31,53,63,98,75]
+#       x = 4
+#       Observable_Output : 4 is not present in the list [10,20,5,10,25,5,24] 
+#
+
+
+#     Trace format 
+#
+#    Example set 1
+# 
+#     Step    program_line    What_happens_inside_the_computer   
+#        1        9              list = [10,20,5,10,25,5,24]
+#        2        10             x=5
+#        3        11             calls find(list,x) ==> find([10,20,5,10,25,5,24],5)
+#
+#     Step    program_line    Observable_Output
+#        1
+
+#
+#
+
+

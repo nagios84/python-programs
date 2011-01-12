@@ -1,0 +1,41 @@
+
+#    Trace the following program
+n=int(raw_input("Enter the value of n: "))#3
+k=int(raw_input("Enter the value of k: "))#3
+
+i=0			
+while(i<n):		
+    j=0			
+    while(j<i):		
+        print '*'
+        j = j+1			
+    print ""			
+    i = i+1			
+
+
+# What does the above program do?
+# 	Step no.	Prog. Line	Memory Updates/Condition Checks
+#       1           6       i = 0
+#       2           7       while(i<n),while(0<3) == True
+#       3           8       j = 0
+#       4           9       while(j<i), while(0<0) == False
+#       5           12      Prints empty line
+#       6           13      i = i+1, i = 1
+#       7           09      while(j<i),while(0<1) == True
+#       8           10      Prints a '*'
+#       9           11      j = j+1, J = 0+1, J = 1
+#       10          09      while(j<i),while(1<1) == False
+#       11          13      Prints a empty line
+#       12          13      i = i+1,i = 1+1, i = 2
+#       13          07      while(i<n),while(2<3) == True
+#       14          08      j = 0
+#       15          09      while(j<i), while(0<2) == False
+#       16          12      Prints a empty line
+#       17          13      i = i+1 = i = 2+1 = i = 3
+#       18          07      while(i<n),while(3<3) == False
+#       19          09      while(j<i),while(0<3) == true
+#       20          10      Prints a '*'
+#        
+
+
+

@@ -1,0 +1,66 @@
+#Example 1:
+
+'''for x in ['spam','eggs','ham']:
+    print x
+
+#Example2:
+
+sum = 0
+for  x in [1,2,3]:
+    sum = sum+x
+    print sum 
+
+#Example 3:for loop on strings
+
+s = 'lumberjack'
+t = "and I'am okay"
+for x in s:
+    print x
+for x in t:
+    print x
+
+#Example 4:for loop on tuple assigments
+
+T = [(1,2)(3,4),(5,6)]
+for (a,b) in T:
+    print (a,b)#This is not working
+    
+
+#Example 5: for loop in Dictionaries
+
+D = {'a':1,'b':2,'c':3}
+
+for x in D:
+    print x
+    
+for key in D:
+    print D[key]
+
+for value in D:
+    print D[value]#Not working as it should work
+
+for (key,value) in D.items():
+    print (key,value)    
+    
+'''    
+#Example 6:Nested Loops
+
+items = ["aaa",111,(4,5),2.01]
+tests = [(4,5),float(3.14)]
+
+for key in tests:
+    for item in items:
+        if item == key:
+            print(key,"was found")
+            break
+        else:
+            print(key,"was not found")            
+            
+for key in test:
+    for item in items:
+        if item = key:
+            print(key,"was found")
+            break
+        else:
+            print(
+            

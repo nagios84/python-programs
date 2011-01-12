@@ -1,0 +1,12 @@
+#To print the right answer
+
+n1 = int(raw_input("Enter an Interger :"))
+n2 = int(raw_input("Enter an Integer :"))
+
+if (n1>n2):
+    print n1, "is greater than" ,n2
+else:
+    if (n1 == n2):
+        print "n1 is equal to n2"
+else:
+    print n2, "is greater than ",n1

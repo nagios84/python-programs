@@ -1,0 +1,7 @@
+#Gets the user’s first and last name and outputs them in reverse order with a comma between them.
+
+firstName = "Towfeeque"
+lastName = "Aalam"
+
+firstName,lastName, = lastName,firstName
+print firstName,',',lastName

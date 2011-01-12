@@ -1,0 +1,8 @@
+#Get a sentence from the user and display it back with one word per line.
+
+str = str(raw_input("Enter a sentence : "))
+n = len(str)
+i = 0
+while(i<n):
+    print str[i]
+    i = i+1

@@ -1,0 +1,6 @@
+#Write a program to convert temperature from Farhrenheit to Celsius.The formula is C = 5/9*(F-32)
+
+F = 11
+C = 5.0/9*(F-32)
+print C
+

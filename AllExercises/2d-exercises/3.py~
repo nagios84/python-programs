@@ -1,0 +1,55 @@
+
+# See the examples
+'''def complete_stars(n):
+
+n=int(raw_input("Enter the number : "))
+complete_stars(n)
+'''
+n=5
+i = 0
+while(i<n):
+    j = 0
+    while(j < i):
+        print '*',
+        j = j+1
+    print ""
+    i = i+1
+
+
+	
+	
+i = n
+while(i>0):
+    i = 1
+    while(i<n):
+        print '*',
+        i = i+1
+    print ""
+    i = i-1
+#
+#    Examples
+#
+#    1) Enter the number : 4
+#
+#    *
+#    * *
+#    * * *
+#    * * * *
+#    * * *
+#    * *
+#    *
+#
+#
+#    1) Enter the number : 5
+#
+#    *
+#    * *
+#    * * *
+#    * * * *
+#    * * * * *
+#    * * * *
+#    * * *
+#    * *
+#    *
+#
+
