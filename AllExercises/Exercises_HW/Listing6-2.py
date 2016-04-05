@@ -8,8 +8,8 @@ import easygui
 name = easygui.enterbox("My name is: ", default = "Oscar")
 Number = easygui.enterbox("My house Number is: ")
 Street = easygui.enterbox("My street name is: ")
-City = easygui.choicebox("My City name is :", choices ["New York", "London", "Kabul"])
-State = easygui.buttonbox("My State is: ", choices ["USA", "UK", "Afganistan"])
+City = easygui.choicebox("My City name is :", choices = ["New York", "London", "Kabul"])
+State = easygui.buttonbox("My State is: ", choices = ["USA", "UK", "Afganistan"])
 Code = easygui.integerbox("My Postal code is: ")
 
 address = name + " " + Number + "\n" + Street + " " + City + "\n" + State + " " + Code 
