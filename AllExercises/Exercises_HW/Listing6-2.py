@@ -5,14 +5,14 @@
 #Akron, Ohio
 #12345
 import easygui
-name = easygui.enterbox("My name is :")
-Number = easygui.enterbox("My house Number is :")
+name = easygui.enterbox("My name is: ", default = "Oscar")
+Number = easygui.enterbox("My house Number is: ")
 Street = easygui.enterbox("My street name is: ")
-City = easygui.enterbox("My City name is :")
-State = easygui.enterbox("My State is:")
-Code = easygui.enterbox("My Postal code is:")
+City = easygui.choicebox("My City name is :", choices ["New York", "London", "Kabul"])
+State = easygui.buttonbox("My State is: ", choices ["USA", "UK", "Afganistan"])
+Code = easygui.integerbox("My Postal code is: ")
 
-address = name + Number +  Street  + City + State  + Code 
+address = name + " " + Number + "\n" + Street + " " + City + "\n" + State + " " + Code 
 
 easygui.msgbox(address)
 
